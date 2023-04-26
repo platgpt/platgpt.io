@@ -25,5 +25,6 @@ kubectl exec $HEAD_POD -it -c ray-head -- python -c "import ray;ray.init();ray.a
 ```
 
 ## References
+
 https://ray-project.github.io/kuberay/guidance/autoscaler
 https://docs.ray.io/en/latest/cluster/kubernetes/user-guides.html
