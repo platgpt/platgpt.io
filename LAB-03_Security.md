@@ -1,6 +1,7 @@
-# Security tooling
+# Security
 
 1. Install [pre-commit](https://pre-commit.com):
+
 ```
 brew install pre-commit
 pre-commit install
@@ -54,7 +55,7 @@ bash -c "$(curl -sSL https://install.mondoo.com/sh)"
 cnquery scan k8s
 ```
 
-6. Install [Teleport](https://github.com/gravitational/teleport):
+7. Install [Teleport](https://github.com/gravitational/teleport):
 ```
 brew install teleport
 helm repo add teleport https://charts.releases.teleport.dev
@@ -73,7 +74,6 @@ kubectl exec -ti ${POD} -n teleport-cluster -- tctl  users add sako --roles=memb
 kubectl exec -i ${POD} -n teleport-cluster -- tctl get role/sako
 export KUBECONFIG=teleport-kubeconfig.yaml
 KUBECONFIG=teleport-kubeconfig.yaml tsh login --proxy=teleport.platgpt.io:443 --user=sako
-
 ```
 
 ## Reference

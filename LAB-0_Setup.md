@@ -3,11 +3,13 @@
 1. Create instance in GCP using [Google Free Credits](https://cloud.google.com/free)
 
 2. Install [kind](https://kind.sigs.k8s.io/docs/user/quick-start/):
+
 ```
 brew install kind
 ```
 
 3. Install [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/#install-with-homebrew-on-macos):
+
 ```
 brew install kubectl
 ```
@@ -34,9 +36,11 @@ kubectl create clusterrolebinding -n kubernetes-dashboard admin-user --clusterro
  token=$(kubectl -n kubernetes-dashboard create token admin-user)
  echo $token
 ```
+
 Login to [k8s Dashboard](http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/workloads?namespace=default)
 
-8. Install [Helm Dashboard](helm plugin install https://github.com/komodorio/helm-dashboard.git):
+8. Install [Helm Dashboard](https://github.com/komodorio/helm-dashboard.git):
+
 ```
 helm plugin install https://github.com/komodorio/helm-dashboard.git
 ```
