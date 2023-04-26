@@ -56,6 +56,7 @@ cnquery scan k8s
 ```
 
 7. Install [Teleport](https://github.com/gravitational/teleport):
+
 ```
 brew install teleport
 helm repo add teleport https://charts.releases.teleport.dev
@@ -68,7 +69,6 @@ MYIP=$(kubectl get services teleport-cluster -o jsonpath='{.status.loadBalancer.
 Add local user and role to login k8s cluster:
 ```
 POD=$(kubectl get pod -l app=teleport-cluster -o jsonpath='{.items[0].metadata.name}' -n teleport-cluster)
-
 kubectl exec -i ${POD} -n teleport-cluster -- tctl create -f < member.yaml 
 kubectl exec -ti ${POD} -n teleport-cluster -- tctl  users add sako --roles=member
 kubectl exec -i ${POD} -n teleport-cluster -- tctl get role/sako
