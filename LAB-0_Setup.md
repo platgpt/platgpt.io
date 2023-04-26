@@ -18,16 +18,17 @@ brew install kubectl
 ```
 brew install kubectx
 ```
+
 5. Install [Helm](https://helm.sh/docs/intro/install/):
 ```
 brew install helm
 ```
 
 6. Install [Docker Desktop](https://docs.docker.com/desktop/install/mac-install):
-```
-```
+
 
 7. Install [Istio](https://istio.io/latest/docs/setup/platform-setup/kind):
+
 ```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 
@@ -52,12 +53,7 @@ helm dashboard
 
 # Install Ray
 
-1. Install [Ray using Kuberay](https://github.com/ray-project/kuberay/blob/master/helm-chart/ray-cluster/README.md):
-```
-
-```
-
-2. Install Ray using Helm:
+1. Install Ray using Helm:
 ```
 helm repo add kuberay https://ray-project.github.io/kuberay-helm
 helm install kuberay-operator kuberay/kuberay-operator --version 0.5.0
