@@ -1,4 +1,7 @@
 # PlatGPT
+
+![alt text](img/banner.png)
+
 - [Prompt Engineering](./Prompt_engineering.md)
 - [LAB-0_Setup](./LAB-0_Setup.md)
 - [LAB-01_Scalability](./LAB-01_Scalability.md)
